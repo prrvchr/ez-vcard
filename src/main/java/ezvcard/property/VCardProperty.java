@@ -359,6 +359,24 @@ public abstract class VCardProperty implements Comparable<VCardProperty> {
 		return true;
 	}
 
+
+
+	
+	public String[] getPropertyCategories() {
+		return new String[0];
+	}
+
+	public String[] getPropertyTypes() {
+		return new String[0];
+	}
+
+	public Map<String, String> getPropertiesValue() {
+		return Collections.emptyMap();
+	}
+
+
+
+
 	/*
 	 * Note: The following parameter helper methods are package-scoped so they
 	 * don't clutter up the Javadocs for the VCardProperty class. They are

@@ -4436,6 +4436,7 @@ public class VCard implements Iterable<VCardProperty> {
 	 * to add
 	 * @param <T> the property class
 	 */
+	@SuppressWarnings("unchecked")
 	public <T extends VCardProperty & HasAltId> void addPropertyAlt(Class<T> propertyClass, T... altRepresentations) {
 		addPropertyAlt(propertyClass, Arrays.asList(altRepresentations));
 	}
@@ -4469,6 +4470,7 @@ public class VCard implements Iterable<VCardProperty> {
 	 * @param <T> the property class
 	 * @return the properties that were replaced (this list is immutable)
 	 */
+	@SuppressWarnings("unchecked")
 	public <T extends VCardProperty & HasAltId> List<T> setPropertyAlt(Class<T> propertyClass, T... altRepresentations) {
 		return setPropertyAlt(propertyClass, Arrays.asList(altRepresentations));
 	}
