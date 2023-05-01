@@ -361,7 +361,6 @@ public abstract class VCardProperty implements Comparable<VCardProperty> {
 
 
 
-	
 	public String[] getPropertyCategories() {
 		return new String[0];
 	}
@@ -373,7 +372,6 @@ public abstract class VCardProperty implements Comparable<VCardProperty> {
 	public Map<String, String> getPropertiesValue() {
 		return Collections.emptyMap();
 	}
-
 
 
 
